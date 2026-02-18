@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.albums {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.album-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.album {
+    background-color: #111;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Base image style for all albums */
+.album img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+
+/* Slight edge blend for BBTM only */
+.album img[src*="bbtm"] {
+    box-shadow: inset 0 0 8px #111;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.85)
+    ),
+    url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0 20px;
+}
+
+
+.hero h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.hero h2 {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.personal-note {
+    margin-top: 25px;
+    font-style: italic;
+    color: #bbb;
+    font-size: 1rem;
+}
+/* ABOUT PAGE STYLING */
+
+.about-hero {
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url("images/theweeknd.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.about-overlay {
+    max-width: 800px;
+    padding: 40px;
+}
+
+.about-hero h2 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.about-text {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+details summary {
+    color: #ff2e2e;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.about-details p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.about-hero h2 {
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+/* your existing CSS above */
+
+.album img[src*="bbtm"] {
+    box-shadow: inset 0 0 10px #111;
+}
+
+/* ===== ADD BELOW THIS LINE ===== */
+
+nav a.active {
+    color: #fff;
+    border-bottom: 2px solid #ff0000;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: 0.3s ease;
+}
+
+.album:hover {
+    transform: translateY(-8px);
+}
+
+nav ul li a.active {
+    color: #ffffff;
+    border-bottom: 3px solid #ff0000;
+    padding-bottom: 4px;
+}
+
+/* Awards Section */
+
+.content {
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.award-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 0, 0, 0.08);
+}
+
+.award-item h3 {
+    color: #ff2e2e;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.award-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+.awards-list {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.award-item {
+    background-color: #111;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.award-item h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.award-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+.awards-list {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.award-item {
+    background-color: #111;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.award-item h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.award-item p {
+    color: #ccc;
+    line-height: 1.6;
+}
+#albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.album {
+  width: 220px;
+  text-align: center;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hit {
+  color: #ff2e2e;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.site-title {
+  font-size: 48px;
+  text-align: center;
+  color: #ff0000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff1a1a,
+    0 0 30px #ff1a1a;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main, section {
+    flex: 1;
+}
+blockquote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ff2e2e;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: white;
+  margin-top: 40px;
+}

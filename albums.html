@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Weeknd | Albums</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="site-title">The Weeknd</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="albums.html" class="active">Albums</a></li>
+            <li><a href="awards.html">Awards</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="albums">
+        <h2>Studio Albums</h2>
+
+        <div class="album-container">
+
+            <!-- Unique Element #2: <figure>
+                 Used to group media with a caption.
+                 It semantically connects the album cover image with its description.
+                 Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+            -->
+            <figure class="album">
+
+                <!-- Unique Attribute #1: loading="lazy"
+                     This attribute delays loading of images until they are needed.
+                     It improves page performance.
+                     Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-loading
+                -->
+
+                <!-- Unique Attribute #3: aria-label
+                     Provides an accessible label for assistive technologies.
+                     It improves accessibility by giving additional context to screen readers.
+                     Reference: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
+                -->
+
+                <img src="images/trilogy.jpg"
+                     alt="Trilogy album cover"
+                     loading="lazy"
+                     aria-label="Trilogy album cover by The Weeknd released in 2012">
+
+                <figcaption>
+                    <h3>Trilogy</h3>
+                    <p>Released: 2012</p>
+                    <p class="hit">Best Hit: "Wicked Games"</p>
+                </figcaption>
+            </figure>
+
+            <div class="album">
+                <img src="images/kissland.jpg" alt="Kiss Land album cover">
+                <h3>Kiss Land</h3>
+                <p>Released: 2013</p>
+                <p class="hit">Best Hit: "The Hills"</p>
+            </div>
+
+            <div class="album">
+                <img src="images/bbtm.jpg" alt="Beauty Behind the Madness album cover">
+                <h3>Beauty Behind the Madness</h3>
+                <p>Released: 2015</p>
+                <p class="hit">Best Hit: "Can't Feel My Face"</p>
+            </div>
+
+            <div class="album">
+                <img src="images/starboy.jpg" alt="Starboy album cover">
+                <h3>Starboy</h3>
+                <p>Released: 2016</p>
+                <p class="hit">Best Hit: "Starboy"</p>
+            </div>
+
+            <div class="album">
+                <img src="images/afterhours.jpg" alt="After Hours album cover">
+                <h3>After Hours</h3>
+                <p>Released: 2020</p>
+                <p class="hit">Best Hit: "Blinding Lights"</p>
+            </div>
+
+            <div class="album">
+                <img src="images/dawnfm.jpg" alt="Dawn FM album cover">
+                <h3>Dawn FM</h3>
+                <p>Released: 2022</p>
+                <p class="hit">Best Hit: "Save Your Tears"</p>
+            </div>
+
+            <div class="album">
+                <img src="images/hurryuptmrw.jpg" alt="Hurry Up Tomorrow album cover">
+                <h3>Hurry Up Tomorrow</h3>
+                <p>Released: 2025</p>
+                <p class="hit">Best Hit: "São Paulo"</p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 The Weeknd Fan Site</p>
+</footer>
+
+</body>
+</html>

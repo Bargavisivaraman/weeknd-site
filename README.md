@@ -19,8 +19,11 @@ Consistent layout across pages
 External stylesheet (styles.css)
 Organized image folder
 Responsive structure
+
 How to View
-This project is hosted using GitHub Pages:
+
+This project is hosted using 
+GitHub Pages:
 👉 https://bargavisivaraman.github.io/weeknd-site/
 (If link changes, update this section.)
 
